@@ -1,16 +1,28 @@
 .App {
-  text-align: center;
+  height: max-content; /* Set total height to accommodate all sections */
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section1,
+.section2,
+.section3,
+.section4 {
+  min-height: fit-content;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overlay {
+  background-color: #282c34;
+  opacity: 70%;
+}
+.modal-button {
+  width: 40%;
+  height: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  color: brown;
+  border-radius: 20px;
 }
 
 .App-header {
@@ -21,18 +33,111 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  position: sticky;
+  color: goldenrod;
+  top: 0;
+}
+
+.Section-header {
+  min-height: 20vh;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
+  top: 0;
+  font-family: monospace;
+  color: transparent;
+  background-image: url(./trip.webp);
+  background-clip: text;
+  font-size: 120pt;
+  -webkit-text-stroke: 3px black; /* Webkit browsers (Chrome, Safari) */
+} /* Add styles for menu items */
+
+.bubble {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  justify-content: center;
+  z-index: 2;
+  font-size: xx-large;
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.App-link {
-  color: #61dafb;
+.bubble1 {
+  background-color: darkviolet; /* Bubble color 1 */
+  top: 250px;
+  left: 250px;
+  animation: moveBubble infinite linear 10s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bubble2 {
+  background-color: dodgerblue; /* Bubble color 2 */
+  top: 250px;
+  right: 250px;
+  animation: moveBubble infinite linear 8s;
+}
+
+.bubble3 {
+  background-color: #3377ff; /* Bubble color 3 */
+  bottom: 250px;
+  left: 250px;
+  animation: moveBubble infinite linear 15s;
+}
+
+.bubble4 {
+  background-color: olive; /* Bubble color 4 */
+  bottom: 250px;
+  right: 250px;
+  animation: moveBubble infinite linear 12s;
+}
+
+.bubble:hover {
+  transform: scale(2); /* Scale the bubble when hovered */
+}
+/* @keyframes moveBubble {
+  0% {
+    transform: translateX(500px);
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    transform: translateY(500px);
   }
+  50% {
+    transform: translateX(500px);
+  }
+  75% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateX(500px);
+  }
+} */
+
+.me-content,
+.projects-content,
+.education-content {
+  color: white;
+  font-size: large;
+  font-family: monospace;
+  text-align: left;
+  padding: 30px;
+  height: 60vh;
+  overflow: scroll;
+}
+
+.experience-content {
+  color: white;
+  font-size: large;
+  font-family: monospace;
+  text-align: center;
+  padding: 30px;
+  height: 60vh;
+  overflow: scroll;
 }
