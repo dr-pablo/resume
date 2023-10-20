@@ -108,8 +108,11 @@ const AboutMe = () => (
       <Box className="me-content">
         <p>
           <List>
-            <ListItem>Paul M. Murphy</ListItem>
-            <ListItem>Technical Consulting and Business Analysis</ListItem>
+            <ListItem>Paul M. Murphy </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>Technical Consulting
+              and Business Analysis
+            </ListItem>
             <ListItem>
               <ListIcon as={ChevronRightIcon}></ListIcon>
               Focus on optimization and efficiency, new development
@@ -126,17 +129,21 @@ const AboutMe = () => (
             </ListItem>
 
             <ListItem>
-              I work well in faster paced, more collaborative environments
+              <ListIcon as={ChevronRightIcon}></ListIcon>I work well in faster
+              paced, more collaborative environments
             </ListItem>
 
             <br />
-            <ListItem>Pauly</ListItem>
+            <ListItem>Pauly </ListItem>
             <ListItem>
               <ListIcon as={ChevronRightIcon}></ListIcon>I enjoy cooking,
               golfing, movies and working out
             </ListItem>
 
-            <ListItem>I have a large family and enjoy being with them</ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>I have a large family
+              and enjoy being with them
+            </ListItem>
             <ListItem>
               <ListIcon as={ChevronRightIcon}></ListIcon>
               From South Bend, Purdue - Krannert, Moved to Chicago
@@ -147,18 +154,33 @@ const AboutMe = () => (
               decentralization and equity are related
             </ListItem>
 
-            <ListItem>My computer is never too far away</ListItem>
-            <ListItem>College Football Saturdays are unbeatable</ListItem>
             <ListItem>
-              I was all state for 3 years in high school in lacrosse, but I am
-              also from Indiana
+              <ListIcon as={ChevronRightIcon}></ListIcon>My computer is never
+              too far away
+            </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>College Football
+              Saturdays are unbeatable
+            </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>I was all state for 3
+              years in high school in lacrosse, but I am also from Indiana
             </ListItem>
             <br />
 
             <ListItem>BigDogP7177</ListItem>
-            <ListItem>Top 150 in Madden 22 during late covid</ListItem>
-            <ListItem>Absolute dier in call of duty</ListItem>
-            <ListItem>I hate minecraft, mad boring...</ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>Top 150 in Madden 22
+              during late covid
+            </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>Absolute dier in call
+              of duty
+            </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>I hate minecraft, mad
+              boring...
+            </ListItem>
           </List>
           Pauly from South Bend.
         </p>
@@ -178,10 +200,22 @@ const Education = () => (
             <h1>Purdue University</h1>
           </HStack>
           <List>
-            <ListItem>Bachelor Of Science, Economics</ListItem>
-            <ListItem>Certificate: Entrepreneurship and Innovation</ListItem>
-            <ListItem>Certificate: Applied Data Science</ListItem>
-            <ListItem>Certificate: Management Consulting</ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>Bachelor Of Science,
+              Economics
+            </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>Certificate:
+              Entrepreneurship and Innovation
+            </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>Certificate: Applied
+              Data Science
+            </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>Certificate: Management
+              Consulting
+            </ListItem>
           </List>
 
           <HStack>
@@ -189,8 +223,12 @@ const Education = () => (
             <h1>Online Courses</h1>
           </HStack>
           <List>
-            <ListItem>Udemy: Solidity</ListItem>
-            <ListItem>More...</ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>Udemy: Solidity
+            </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>More...
+            </ListItem>
           </List>
         </VStack>
       </Box>
