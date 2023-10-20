@@ -6,7 +6,7 @@ export function ConnectModal() {
     <HStack>
       <Tooltip
         color="white"
-        label="LInkedIn Profile"
+        label="LinkedIn Profile"
         closeDelay={200}
         placement="bottom"
       >
@@ -48,7 +48,7 @@ export function ConnectModal() {
         </span>
       </Tooltip>
       <br />
-      <Tooltip
+      {/* <Tooltip
         color="white"
         label="dusty bender alpha discord invite"
         closeDelay={200}
@@ -60,7 +60,7 @@ export function ConnectModal() {
             onClick={() => window.open("https://discord.gg/WbH9ZJrYg3")}
           />
         </span>
-      </Tooltip>
+      </Tooltip> */}
     </HStack>
   );
 }

@@ -108,17 +108,17 @@ const AboutMe = () => (
         </ListItem>
         <ListItem>
           <ListIcon as={ChevronRightIcon}></ListIcon>
-          Focus on optimization and efficiency, new development
+          Efficiency, optimization, and automation are a few passions
         </ListItem>
 
         <ListItem>
           <ListIcon as={ChevronRightIcon}></ListIcon>
-          Python, Javascript, Rust experience. I 🤍 Rust lol
+          Python, Javascript, Rust experience. I 🤍 Rust
         </ListItem>
 
         <ListItem>
-          <ListIcon as={ChevronRightIcon}></ListIcon>I enjoyx visualizing and
-          analyzing data to see what is happening and what can be done
+          <ListIcon as={ChevronRightIcon}></ListIcon>Terrific visualization
+          specialist and truly enjoy deriving insights from data
         </ListItem>
 
         <ListItem>
@@ -135,7 +135,7 @@ const AboutMe = () => (
         <h3>Pauly </h3>
         <ListItem>
           <ListIcon as={ChevronRightIcon}></ListIcon>I enjoy cooking, golfing,
-          movies and working out
+          watching movies, and working out
         </ListItem>
 
         <ListItem>
@@ -148,8 +148,8 @@ const AboutMe = () => (
         </ListItem>
 
         <ListItem>
-          <ListIcon as={ChevronRightIcon}></ListIcon>I believe decentralization
-          and equity are related
+          <ListIcon as={ChevronRightIcon}></ListIcon>Decentralization and equity
+          are related
         </ListItem>
 
         <ListItem>
@@ -174,10 +174,6 @@ const AboutMe = () => (
         <ListItem>
           <ListIcon as={ChevronRightIcon}></ListIcon>Absolute dier in call of
           duty
-        </ListItem>
-        <ListItem>
-          <ListIcon as={ChevronRightIcon}></ListIcon>Metaverse projects are just
-          cash grab forks of minecraft
         </ListItem>
         <ListItem>
           <ListIcon as={ChevronRightIcon}></ListIcon>Patiently waiting for the
@@ -237,6 +233,10 @@ const Education = () => (
               >
                 Azure: Core Data Concepts
               </Link>
+            </ListItem>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>
+              Azure Developer Certificate in progress...
             </ListItem>
           </List>
         </VStack>

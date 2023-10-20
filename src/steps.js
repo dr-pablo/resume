@@ -63,7 +63,7 @@ export const steps = [
   {
     title: "Next Steps:",
     description:
-      "I am looking to continue to build my business, analytics, and web development skills under senior mentorship",
+      "I am looking to continue to build my business, analytics, and web development skills under the right mentorship",
     date: "Current",
     icon: "💫",
   },
