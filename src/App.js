@@ -111,18 +111,20 @@ const AboutMe = () => (
             <ListItem>Paul M. Murphy</ListItem>
             <ListItem>Technical Consulting and Business Analysis</ListItem>
             <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>
               Focus on optimization and efficiency, new development
             </ListItem>
-            <ListIcon as={ChevronRightIcon}></ListIcon>
+
             <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>
               Python, Javascript, Rust experience. I 🤍 Rust lol
             </ListItem>
-            <ListIcon as={ChevronRightIcon}></ListIcon>
+
             <ListItem>
-              I think that web3 has potential to disrupt a lot more than it
-              already has
+              <ListIcon as={ChevronRightIcon}></ListIcon>I think that web3 has
+              potential to disrupt a lot more than it already has
             </ListItem>
-            <ListIcon as={ChevronRightIcon}></ListIcon>
+
             <ListItem>
               I work well in faster paced, more collaborative environments
             </ListItem>
@@ -130,18 +132,21 @@ const AboutMe = () => (
             <br />
             <ListItem>Pauly</ListItem>
             <ListItem>
-              I enjoy cooking, golfing, movies and working out
+              <ListIcon as={ChevronRightIcon}></ListIcon>I enjoy cooking,
+              golfing, movies and working out
             </ListItem>
-            <ListIcon as={ChevronRightIcon}></ListIcon>
+
             <ListItem>I have a large family and enjoy being with them</ListItem>
             <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>
               From South Bend, Purdue - Krannert, Moved to Chicago
             </ListItem>
-            <ListIcon as={ChevronRightIcon}></ListIcon>
+
             <ListItem>
-              I believe decentralization and equity are related
+              <ListIcon as={ChevronRightIcon}></ListIcon>I believe
+              decentralization and equity are related
             </ListItem>
-            <ListIcon as={ChevronRightIcon}></ListIcon>
+
             <ListItem>My computer is never too far away</ListItem>
             <ListItem>College Football Saturdays are unbeatable</ListItem>
             <ListItem>
