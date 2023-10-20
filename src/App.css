@@ -1,7 +1,4 @@
 .App {
-  height: max-content; /* Set total height to accommodate all sections */
-  display: flex;
-  flex-direction: column;
   overflow-y: hidden;
   scroll-behavior: smooth;
 }
@@ -21,7 +18,8 @@
   height: 3vh;
   margin-left: auto;
   margin-right: auto;
-  color: brown;
+  color: black;
+  background-color: goldenrod;
   border-radius: 20px;
 }
 
@@ -102,42 +100,39 @@
 .bubble:hover {
   transform: scale(2); /* Scale the bubble when hovered */
 }
-/* @keyframes moveBubble {
-  0% {
-    transform: translateX(500px);
-  }
-  25% {
-    transform: translateY(500px);
-  }
-  50% {
-    transform: translateX(500px);
-  }
-  75% {
-    transform: translateY(500px);
-  }
-  100% {
-    transform: translateX(500px);
-  }
-} */
 
 .me-content,
 .projects-content,
-.education-content {
-  color: white;
-  font-size: large;
-  font-family: monospace;
-  text-align: left;
-  padding: 30px;
-  height: 60vh;
-  overflow: scroll;
-}
-
+.education-content,
 .experience-content {
   color: white;
-  font-size: large;
   font-family: monospace;
-  text-align: center;
   padding: 30px;
   height: 60vh;
-  overflow: scroll;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.education-content h1 {
+  padding-top: 30px;
+}
+
+/* For webkit-based browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Set width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #282c34; /* Set background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: goldenrod; /* Set color of the handle */
+  border-radius: 6px; /* Set border radius of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set color of the handle on hover */
 }

@@ -1,33 +1,85 @@
-import { Box, Heading } from "@chakra-ui/react";
-
+import { Box, Heading, List, ListItem, ListIcon } from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+const client = "[REDACTED CLIENT]";
 export function Projects() {
   return (
     <Box>
-      <Heading>BlockFill$</Heading>
-      <Box>
-        Python --- Analysis, seaborn visualizations, pandas/numpy manipulation,
-        MongoDB NoSQL Object data, Migrate to table structure, Design schema,
-        Build out reports. Live loan reconciliation direct from source into
-        excel/powerbi, Analyze document and present findings on trading platform
-      </Box>
-      <Heading>Bunker Labs</Heading>
-      <Box>
-        Power Bi Financial, operations, and impact analysis, Ad Hoc reporting,
-        dashboard design for operations and leadership, consolidate data
-        sources, compress and streamline data collection, design infrastructure
-        (dwh), Azure Data Factory, Demographic analysis, Extended PII
-        penetration analysis (report only)
-      </Box>
+      <Heading>{client}</Heading>
+      <List spacing={3}>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Client had a industry leading OTC institutional crypto-currency
+          trading platform mainly build in Python and C
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Design SQL-based schema for data migration from their No-SQL mongodb
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Model and Build migrations from their database to ours
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Wireframe and execute multiple dashboards using Power BI to provide
+          leadership insight into active postions of clients and trading floor
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Optimize performance of migrations and consumptions for closer to
+          real-time insight
+        </ListItem>
+      </List>
+      <Heading>{client}</Heading>
+      <List spacing={3}>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Organize, Structure, and Document existing data sources
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>Design and Model
+          infrastructure for data warehouse
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Collaborate with stakeholders to document requirements of reporting
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Wireframe required KPI's based on department reporting into dashboards
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Migrate and validate existing and new data quality in new
+          infrastructure
+        </ListItem>
+      </List>
       <Heading>MJM Real Estate Holdings</Heading>
-      <Box>
-        Research real estate in indianapolis, perform roi analysis and present
-        most efficient investments from capital allocation and expected
-        monthly/yearly return, and renovation costs(break even), Track and
-        analyze public and private investment notices, city planning office
-        records and future mock up plans, Identify inflow of investment. to
-        narrow down initial neighborhoods Python, Flask, Pandas, sci-kit learn,
-        matplotlib/plotly
-      </Box>
+      <List spaceing={3}>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Document budgetary and geographic constraint to investment thesis
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Identify probable regions and properties based on investment
+          constraints
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Scrape public investment information from government sources and merge
+          with historic data from real estate api
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Model potential revenue based off comps of targeted properties and
+          weights from potential public investment
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Plan and execute tenant pre-move in renovations and screenings
+        </ListItem>
+      </List>
     </Box>
   );
 }

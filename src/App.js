@@ -16,6 +16,7 @@ import {
   List,
   ListItem,
   ListIcon,
+  Link,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Journey from "./Journey";
@@ -102,91 +103,95 @@ function App() {
 export default App;
 
 const AboutMe = () => (
-  <>
-    <div id="section1" className="section section1">
-      <header className="Section-header">About Me</header>
-      <Box className="me-content">
-        <p>
-          <List>
-            <ListItem>Paul M. Murphy </ListItem>
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>Technical Consulting
-              and Business Analysis
-            </ListItem>
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>
-              Focus on optimization and efficiency, new development
-            </ListItem>
+  <div id="section1" className="section section1">
+    <header className="Section-header">About Me</header>
+    <Box className="me-content">
+      <List spacing={3}>
+        <h2>Paul M. Murphy </h2>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>Technical Consulting and
+          Business Analysis
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Focus on optimization and efficiency, new development
+        </ListItem>
 
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>
-              Python, Javascript, Rust experience. I 🤍 Rust lol
-            </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          Python, Javascript, Rust experience. I 🤍 Rust lol
+        </ListItem>
 
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>I think that web3 has
-              potential to disrupt a lot more than it already has
-            </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>I enjoyx visualizing and
+          analyzing data to see what is happening and what can be done
+        </ListItem>
 
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>I work well in faster
-              paced, more collaborative environments
-            </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>I think that web3 has
+          potential to disrupt a lot more than it already has
+        </ListItem>
 
-            <br />
-            <ListItem>Pauly </ListItem>
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>I enjoy cooking,
-              golfing, movies and working out
-            </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>I work well in faster
+          paced, more collaborative environments
+        </ListItem>
 
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>I have a large family
-              and enjoy being with them
-            </ListItem>
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>
-              From South Bend, Purdue - Krannert, Moved to Chicago
-            </ListItem>
+        <br />
+        <h3>Pauly </h3>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>I enjoy cooking, golfing,
+          movies and working out
+        </ListItem>
 
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>I believe
-              decentralization and equity are related
-            </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>I have a large family and
+          enjoy being with them
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>
+          From South Bend, Purdue - Krannert, Moved to Chicago
+        </ListItem>
 
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>My computer is never
-              too far away
-            </ListItem>
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>College Football
-              Saturdays are unbeatable
-            </ListItem>
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>I was all state for 3
-              years in high school in lacrosse, but I am also from Indiana
-            </ListItem>
-            <br />
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>I believe decentralization
+          and equity are related
+        </ListItem>
 
-            <ListItem>BigDogP7177</ListItem>
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>Top 150 in Madden 22
-              during late covid
-            </ListItem>
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>Absolute dier in call
-              of duty
-            </ListItem>
-            <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>I hate minecraft, mad
-              boring...
-            </ListItem>
-          </List>
-          Pauly from South Bend.
-        </p>
-      </Box>
-    </div>
-  </>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>My computer is never too
+          far away
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>College Football Saturdays
+          are unbeatable
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>I was all state for 3 years
+          in high school in lacrosse (robbed my senior year)
+        </ListItem>
+        <br />
+
+        <h3>BigDogP7177</h3>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>Top 150 in Madden 22 during
+          late covid
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>Absolute dier in call of
+          duty
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>Metaverse projects are just
+          cash grab forks of minecraft
+        </ListItem>
+        <ListItem>
+          <ListIcon as={ChevronRightIcon}></ListIcon>Patiently waiting for the
+          next elder scrolls...
+        </ListItem>
+      </List>
+    </Box>
+  </div>
 );
 
 const Education = () => (
@@ -195,11 +200,9 @@ const Education = () => (
       <header className="Section-header">Education</header>
       <Box className="education-content">
         <VStack>
-          <HStack>
-            <p>🚂</p>
-            <h1>Purdue University</h1>
-          </HStack>
-          <List>
+          <List spacing={3}>
+            <h1>🚂 Purdue University</h1>
+
             <ListItem>
               <ListIcon as={ChevronRightIcon}></ListIcon>Bachelor Of Science,
               Economics
@@ -216,18 +219,30 @@ const Education = () => (
               <ListIcon as={ChevronRightIcon}></ListIcon>Certificate: Management
               Consulting
             </ListItem>
-          </List>
 
-          <HStack>
-            <p>💻</p>
-            <h1>Online Courses</h1>
-          </HStack>
-          <List>
+            <h1>💻 Online Courses</h1>
             <ListItem>
               <ListIcon as={ChevronRightIcon}></ListIcon>Udemy: Solidity
             </ListItem>
             <ListItem>
-              <ListIcon as={ChevronRightIcon}></ListIcon>More...
+              <ListIcon as={ChevronRightIcon}></ListIcon>Coursera: Rust
+            </ListItem>
+
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>Princeton (Coursera):
+              Algorithms I
+            </ListItem>
+            <h1>🎮 Microsoft Learn</h1>
+            <ListItem>
+              <ListIcon as={ChevronRightIcon}></ListIcon>
+              <Link
+                href="https://learn.microsoft.com/api/achievements/share/en-us/Pauly-2154/24BXD3BV?sharingId=F36BD12D88A7A487"
+                isExternal
+                target="__blank"
+                color={"inherit"}
+              >
+                Azure: Core Data Concepts
+              </Link>
             </ListItem>
           </List>
         </VStack>
@@ -241,7 +256,9 @@ const Experience = () => (
     <div id="section3" className="section section3">
       <header className="Section-header">Experience</header>
       <Box className="experience-content">
-        <Journey />
+        <VStack>
+          <Journey />
+        </VStack>
       </Box>
     </div>
   </>
