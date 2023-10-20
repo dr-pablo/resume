@@ -11,7 +11,6 @@ import {
   ModalCloseButton,
   ModalFooter,
   Box,
-  HStack,
   VStack,
   List,
   ListItem,
@@ -25,11 +24,6 @@ import { Projects as Proj } from "./Projects";
 function App() {
   const [modalContent, setModalContent] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleBubbleClick = (sectionId) => {
-    setModalContent(sectionId);
-    setIsModalOpen(true);
-  };
 
   useEffect(() => {
     // Disable scrolling behavior
@@ -66,7 +60,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={me} />
+        <img src={me} alt="me animation" />
         <h1>Paul Murphy</h1>
         <ConnectModal />
       </header>
