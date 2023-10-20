@@ -17,6 +17,7 @@ import {
   ListItem,
   ListIcon,
 } from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icon";
 import Journey from "./Journey";
 import { Projects as Proj } from "./Projects";
 
@@ -112,16 +113,16 @@ const AboutMe = () => (
             <ListItem>
               Focus on optimization and efficiency, new development
             </ListItem>
-            <ListIcon as="ChevronRightIcon"></ListIcon>
+            <ListIcon as={ChevronRightIcon}></ListIcon>
             <ListItem>
               Python, Javascript, Rust experience. I 🤍 Rust lol
             </ListItem>
-            <ListIcon as="ChevronRightIcon"></ListIcon>
+            <ListIcon as={ChevronRightIcon}></ListIcon>
             <ListItem>
               I think that web3 has potential to disrupt a lot more than it
               already has
             </ListItem>
-            <ListIcon as="ChevronRightIcon"></ListIcon>
+            <ListIcon as={ChevronRightIcon}></ListIcon>
             <ListItem>
               I work well in faster paced, more collaborative environments
             </ListItem>
@@ -131,16 +132,16 @@ const AboutMe = () => (
             <ListItem>
               I enjoy cooking, golfing, movies and working out
             </ListItem>
-            <ListIcon as="ChevronRightIcon"></ListIcon>
+            <ListIcon as={ChevronRightIcon}></ListIcon>
             <ListItem>I have a large family and enjoy being with them</ListItem>
             <ListItem>
               From South Bend, Purdue - Krannert, Moved to Chicago
             </ListItem>
-            <ListIcon as="ChevronRightIcon"></ListIcon>
+            <ListIcon as={ChevronRightIcon}></ListIcon>
             <ListItem>
               I believe decentralization and equity are related
             </ListItem>
-            <ListIcon as="ChevronRightIcon"></ListIcon>
+            <ListIcon as={ChevronRightIcon}></ListIcon>
             <ListItem>My computer is never too far away</ListItem>
             <ListItem>College Football Saturdays are unbeatable</ListItem>
             <ListItem>
