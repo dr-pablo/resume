@@ -17,7 +17,7 @@ import {
   ListItem,
   ListIcon,
 } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icon";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import Journey from "./Journey";
 import { Projects as Proj } from "./Projects";
 
