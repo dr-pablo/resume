@@ -13,6 +13,9 @@ import {
   Box,
   HStack,
   VStack,
+  List,
+  ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
 import Journey from "./Journey";
 import { Projects as Proj } from "./Projects";
@@ -103,77 +106,55 @@ const AboutMe = () => (
       <header className="Section-header">About Me</header>
       <Box className="me-content">
         <p>
-          Pauly from South Bend. Went to Saint Joseph High School and played
-          lacrosse. Played travel year round through high school but hung up the
-          cleats when i went to college. Decided to go to Purdue since i Had
-          family who said good things. Went focused on investment banking and to
-          study economics/finance. Found a passioin for data
-          analytics/programming. Never thought I could do it but turns out its a
-          lot of fun to build. Joined Kappa Sigma Fraternity (Chi Chapter) and
-          was President of the Alpha Omicron Pledge Class. After my sophomore
-          year I interned in indianapolis for Indiana Farm Bureau Insurance. Did
-          a lot of market research and automation. While in indy found a lot of
-          entreprenuerial inspirations from{" "}
-          <a>Robert Kiyosaki Rich Dad, Poor Dad.</a>
-        </p>
-        <p>
-          Start a real estate firm with my older brother and we bought renovated
-          and rented out multiple units in the indianapolis area. He was the
-          money guy i was ops. We both hustled tho. While going back and forth
-          from purdue to indy to work for MJM RE during my junior year I really
-          started to solidify a massive change from being quite out there to
-          being much more academic and business focused. Around this time I got
-          exposed to Crypto currency mainly ethereum and this has been a great
-          development. I began to learn how to program smart contracts and
-          interact with the chain via scripts and web apps. I continued to work
-          on these and a few others through the rest of my college career. I ran
-          the Anvil start up career fair bringing over 30 startup companies from
-          around the nation to Purdue to recruit interns and team. We mainly
-          would build and hangout together as a entr minded group. Many founded
-          and have exited from the anvil. Fast forward to graduation and after
-          moving a lot of academic focuses from econ/banking/ib to data and
-          development i still finished my BS in economics and graduated from
-          Krannert. I accepted a position from Accelerated Growth Advisors, a
-          small cosulting practice in the heart of Chicago, serving smb, npo and
-          publicly traded companies accounting and data needs. this was a great
-          experience where for a bit over a year i drank from a firehose
-          learning data warehouse development, business intelligence techniques,
-          developing my ability present and persuade. While it was a good
-          experience, the company was later acquired and that marked the end of
-          my time there. After this I went after my entr dreams of founding a
-          fintech/blockchain company. I started consulting on a few smaller
-          projects I discovered via internet acquaintances. After getting a bit
-          of a footing I developed Cribz DAO and the product Cribz HELOC which
-          is a platform that can process a home equity line of credit and
-          distribute the credit via crypto currency on chain. This was build on
-          avalanche and was never able to go live due to concerns around
-          legality of the forclosure process we had defined. While I worked on
-          Cribz fro a bit longer I soon shelved it with hopes of revisting in
-          the future to help redefine how property owners can take a stronger
-          grasp of there equity. See projects for more. After this i continued
-          consulting on new and old projects of peers. Over the past couple
-          years I have grown significantly in my developemnt skill set and
-          recently started applying to larger companies for employment so that i
-          can also development under a more senior mentor who can help identify
-          any bad habits. I have a number of other projects you can view{" "}
-          <a>here</a>
-        </p>
-        <p>
-          In my personal life I enjoy being with family and friends, working
-          out, playing golf, and reading about tech and web3. I enjoy cooking as
-          well as fighting (muay thai) I have always been very curious and
-          havent been known to shy away from finding out what i am curious
-          about. I am a horror movie coneseur. If my stomach turns you win.
-          Building apps and tools for my own enjoyment is also soemthing i like
-          to do in my freetime as well as watching tv. troling on twitter or x
-          is great, I dont really have a real account. investing since i was
-          like 16. Literally had my mom create a brokerage account so i could
-          trade underage lol. 1 exit. (mjm real estate, tombstone -- Sept 2023
-          $xxxxxxxxx???) I thrive in fast paced environments, pressure makes
-          diamonds. I believe one area i stand above is the ability to
-          communicate effectively over technical lines. I have experience
-          talking schema and pipelines with a dev team and the next call explain
-          the positives and tell the story to a client. BUT FR WHADDUP NERD???
+          <List>
+            <ListItem>Paul M. Murphy</ListItem>
+            <ListItem>Technical Consulting and Business Analysis</ListItem>
+            <ListItem>
+              Focus on optimization and efficiency, new development
+            </ListItem>
+            <ListIcon></ListIcon>
+            <ListItem>
+              Python, Javascript, Rust experience. I love Rust lol
+            </ListItem>
+            <ListIcon></ListIcon>
+            <ListItem>
+              I think that web3 has potential to disrupt a lot more than it
+              already has
+            </ListItem>
+            <ListIcon></ListIcon>
+            <ListItem>
+              I work well in faster paced, more collaborative environments
+            </ListItem>
+
+            <br />
+            <ListItem>Pauly</ListItem>
+            <ListItem>
+              I enjoy cooking, golfing, movies and working out
+            </ListItem>
+            <ListIcon></ListIcon>
+            <ListItem>I have a large family and enjoy being with them</ListItem>
+            <ListItem>
+              From South Bend, Purdue - Krannert, Moved to Chicago
+            </ListItem>
+            <ListIcon></ListIcon>
+            <ListItem>
+              I believe decentralization and equity are related
+            </ListItem>
+            <ListIcon></ListIcon>
+            <ListItem>My computer is never too far away</ListItem>
+            <ListItem>College Football Saturdays are unbeatable</ListItem>
+            <ListItem>
+              I was all state for 3 years in high school in lacrosse, but I am
+              also from Indiana
+            </ListItem>
+            <br />
+
+            <ListItem>BigDogP7177</ListItem>
+            <ListItem>Top 150 in Madden 22 during late covid</ListItem>
+            <ListItem>Absolute dier in call of duty</ListItem>
+            <ListItem>I hate minecraft, mad boring...</ListItem>
+          </List>
+          Pauly from South Bend.
         </p>
       </Box>
     </div>
@@ -190,21 +171,21 @@ const Education = () => (
             <p>🚂</p>
             <h1>Purdue University</h1>
           </HStack>
-          <ul>
-            <li>Bachelor Of Science, Economics</li>
-            <li>Certificate: Entrepreneurship and Innovation</li>
-            <li>Certificate: Applied Data Science</li>
-            <li>Certificate: Management Consulting</li>
-          </ul>
+          <List>
+            <ListItem>Bachelor Of Science, Economics</ListItem>
+            <ListItem>Certificate: Entrepreneurship and Innovation</ListItem>
+            <ListItem>Certificate: Applied Data Science</ListItem>
+            <ListItem>Certificate: Management Consulting</ListItem>
+          </List>
 
           <HStack>
             <p>💻</p>
             <h1>Online Courses</h1>
           </HStack>
-          <ul>
-            <li>Udemy: Solidity</li>
-            <li>More...</li>
-          </ul>
+          <List>
+            <ListItem>Udemy: Solidity</ListItem>
+            <ListItem>More...</ListItem>
+          </List>
         </VStack>
       </Box>
     </div>
