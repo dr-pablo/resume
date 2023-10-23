@@ -1,5 +1,5 @@
 import me from "./me.png";
-import React, { useEffect } from "react";
+import React, { useEffect, useHistory } from "react";
 import "./App.css";
 import { ConnectModal } from "./ConnectModal";
 import { useState } from "react";
@@ -24,6 +24,34 @@ import { Projects as Proj } from "./Projects";
 function App() {
   const [modalContent, setModalContent] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const history = useHistory();
+
+  useEffect(() => {
+    const handleModalNavigation = (event) => {
+      if (isModalOpen) {
+        event.preventDefault(); // Prevents the default browser navigation behavior
+
+        // You can choose one of the following options:
+        // 1. Close the modal when the user clicks the back button
+        // closeModalFunction();
+        isModalOpen(false);
+        history.push("/");
+        // 2. Do not allow users to go back when the modal is open
+        // Do nothing here, or display a message to the user
+        alert("Please close modal");
+        // 3. Reroute the browser to a specific route when the modal is open
+        // history.push('/your-custom-route');
+      }
+    };
+
+    // Add event listener to the 'popstate' event when the component mounts
+    window.addEventListener("popstate", handleModalNavigation);
+
+    // Remove event listener when the component unmounts
+    return () => {
+      window.removeEventListener("popstate", handleModalNavigation);
+    };
+  }, [isModalOpen, history]);
 
   useEffect(() => {
     // Disable scrolling behavior
