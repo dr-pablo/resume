@@ -1,6 +1,5 @@
 import me from "./me.png";
 import React, { useEffect } from "react";
-import { useHistory } from "react-router-dom";
 import "./App.css";
 import { ConnectModal } from "./ConnectModal";
 import { useState } from "react";
@@ -25,7 +24,6 @@ import { Projects as Proj } from "./Projects";
 function App() {
   const [modalContent, setModalContent] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const history = useHistory();
 
   useEffect(() => {
     const handleModalNavigation = (event) => {
@@ -36,7 +34,6 @@ function App() {
         // 1. Close the modal when the user clicks the back button
         // closeModalFunction();
         isModalOpen(false);
-        history.push("/");
         // 2. Do not allow users to go back when the modal is open
         // Do nothing here, or display a message to the user
         alert("Please close modal");
