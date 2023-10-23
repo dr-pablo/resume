@@ -1,5 +1,6 @@
 import me from "./me.png";
-import React, { useEffect, useHistory } from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import "./App.css";
 import { ConnectModal } from "./ConnectModal";
 import { useState } from "react";
