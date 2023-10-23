@@ -49,7 +49,7 @@ function App() {
     return () => {
       window.removeEventListener("popstate", handleModalNavigation);
     };
-  }, [isModalOpen, history]);
+  }, [isModalOpen]);
 
   useEffect(() => {
     // Disable scrolling behavior
